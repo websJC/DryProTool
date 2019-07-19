@@ -1,0 +1,63 @@
+.boton-comprar,
+.boton-borrar:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #57A639;
+    color: white;
+    text-decoration: none;
+}
+
+.boton-borrar,
+.boton-comprar:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #57A639;
+    font-weight: bold;
+    background-color: white;
+    text-decoration: none;
+    border-color: 1px solid #57A639;
+}
+
+.verd {
+    color: #57A639;
+}
+
+.producto-titulo,
+.gran {
+    padding-top: 20px;
+    font-size: 2em;
+    color: #57A639;
+    text-align: center;
+}
+
+.resultat {
+    border: 1px solid blue;
+    padding: 20px;
+    text-align: center;
+}
+
+#previas,
+#previaProducto,
+#segundoPaso {
+    display: none;
+}
+
+#formulario fieldset {
+    width: 80%;
+    margin: 0px auto;
+}
+
+#formulario fieldset .contenedor {
+    width: 60%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#formulario h2 {
+    text-align: center;
+}
+
+#resultados>h2,
+.resultat>h2 {
+    text-align: center;
+}

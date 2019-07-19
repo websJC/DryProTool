@@ -1,0 +1,68 @@
+<!-- Añadimos un contenedor solamente para probar en sublime fuera de wp -->
+<!-- Podemos borrar desde aqui -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DryProTool</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+    <!-- Hasta aqui -->
+    <!-- Esto lo podemos meter en cualquier widget, html, actualmente está dentro de un widget de elementor en un html -->
+    <form id="formulario" method="post" name="formulario">
+        <fieldset id="inicial">
+            <div class="contenedor">
+                <legend id="eligeProducto">
+                    <h2>1. ¿Qué funda necesitas?</h2>
+                </legend>
+                <br>
+                <label for="BRAZO"><input name="tipoProductoPrev" type="radio" id="BRAZO" value="BRAZO" />BRAZO</label><br>
+                <label for="PIERNA"><input name="tipoProductoPrev" type="radio" id="PIERNA" value="PIERNA" />PIERNA</label><br>
+                <label><input name="tipoProducto" type="radio" value="PICC" />PICC</label><br>
+                <label><input name="tipoProducto" type="radio" value="OSTOMIA" />OSTOMIA</label><br>
+            </div>
+        </fieldset>
+        <fieldset id="previas">
+            <div class="contenedor">
+                <legend>
+                    <h2>1.B ¿Por dónde tienes la escayola o venda?</h2>
+                </legend>
+                <br>
+                <p id="previaProducto"></p>
+                <br>
+                <label for="brazoCompleto"><input name="tipoProducto" type="radio" id="brazoCompleto" value="BRAZO COMPLETO" /><strong>BRAZO COMPLETO</strong><br>¿La escayola casi te llega al codo (menos de 4 cm), o lo incluye?</label>
+                <label for="medioBrazo"><input name="tipoProducto" type="radio" id="medioBrazo" value="MEDIO BRAZO" /><strong>MEDIO BRAZO</strong><br>¿Quedan 5 centímetros de piel entre el final de la escayola y el codo?</label>
+                <label for="piernaCompleta"><input name="tipoProducto" type="radio" id="piernaCompleta" value="PIERNA COMPLETA" /><strong>PIERNA COMPLETA</strong><br>¿La escayola casi te llega a la rodilla o la incluye?</label>
+                <label for="mediaPierna"><input name="tipoProducto" type="radio" id="mediaPierna" value="MEDIA PIERNA" /><strong>MEDIA PIERNA</strong><br>¿Quedan 5 centímetros de piel entre el final de la escayola y tu rodilla?</label>
+            </div>
+        </fieldset>
+        <fieldset id="segundoPaso">
+            <div class="contenedor">
+                <legend>
+                    <h2>2. Medidas</h2>
+                </legend>
+                <br>
+                <p id="previaProducto2"></p>
+                <br>
+                <label for="circSup"><strong><span id="ayudaCircunferencia"></span></strong><br><input id="circSup" maxlength="4" name="circSup" type="number" /><br>
+                </label>
+                <br>
+                <label for="largo"><strong><span id="ayudaLargo"></span></strong><br><input id="largo" maxlength="4" name="largo" type="number" /><br>
+                </label>
+                <br>
+                <button id="enviar" class="boton-comprar" name="enviar">Ver mi talla</button>
+            </div>
+        </fieldset>
+    </form>
+    <div class="contenedor">
+        <p id="resultados"></p>
+        <input id="borrar" class="boton-borrar" name="borrar" type="reset" value="Atrás" />
+        <p id="errores"></p>
+    </div>
+</body>
+
+</html>
